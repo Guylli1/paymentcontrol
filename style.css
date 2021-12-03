@@ -1,0 +1,17 @@
+table {
+  border-style: hidden;
+  padding: auto;
+}
+thead {
+  background-color: whitesmoke;
+}
+td {
+  padding: 5px;
+}
+button {
+  background-color: rgb(235, 57, 57);
+  padding: 1.5px;
+}
+.configbut {
+  border: hidden;
+}
