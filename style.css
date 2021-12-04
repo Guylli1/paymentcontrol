@@ -2,16 +2,40 @@ table {
   border-style: hidden;
   padding: auto;
 }
-thead {
-  background-color: whitesmoke;
+caption {
+  background-color: rgb(39, 211, 39);
 }
 td {
   padding: 5px;
 }
 button {
   background-color: rgb(235, 57, 57);
-  padding: 1.5px;
+  padding: 3px;
+  border-radius: 10%;
 }
 .configbut {
   border: hidden;
+}
+#but1,
+#but2,
+#but3,
+#but4,
+#but5,
+#but6,
+#but7,
+#but8,
+#but9,
+#but10,
+#but11,
+#but12,
+#but13 {
+  color: rgb(39, 211, 39);
+  background-color: black;
+}
+#comprovA {
+  background-color: black;
+}
+tr {
+  color: rgb(39, 211, 39);
+  background-color: black;
 }
