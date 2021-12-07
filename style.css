@@ -3,13 +3,13 @@ table {
   padding: auto;
 }
 caption {
-  background-color: rgb(39, 211, 39);
+  background-color: #b33939;
 }
 td {
   padding: 5px;
 }
 button {
-  background-color: rgb(235, 57, 57);
+  background-color: #bb2d2dfb;
   padding: 3px;
   border-radius: 10%;
 }
@@ -29,13 +29,69 @@ button {
 #but11,
 #but12,
 #but13 {
-  color: rgb(39, 211, 39);
-  background-color: black;
+  color: black;
+  background-color: #aaa69d;
 }
 #comprovA {
-  background-color: black;
+  background-color: #aaa69d;
 }
 tr {
-  color: rgb(39, 211, 39);
-  background-color: black;
+  color: black;
+  background-color: #aaa69d;
+}
+a {
+  color: black;
+}
+
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #aaa69d;
+  padding: 5px;
+  border: 10px solid #b33939;
+  position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: modal 3s forwards;
+}
+
+.fechar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #aaa69d;
+  top: -30px;
+  right: -30px;
+  position: absolute;
+  background: #b33939;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.img {
+  height: 500px;
+  width: 150px;
+  padding: 10px;
 }
