@@ -39,59 +39,42 @@ tr {
   color: black;
   background-color: #aaa69d;
 }
-a {
-  color: black;
-}
 
-.modal-container {
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+img {
+  width: 200px;
+  height: 720px;
 }
 
 .modal {
-  background: #aaa69d;
-  padding: 5px;
+  width: 200px;
+  height: 720px;
+  position: absolute;
+  margin-left: -200px;
+  left: 50%;
+  display: none;
+  background: white;
   border: 10px solid #b33939;
-  position: relative;
+  animation: animate;
+  animation-duration: 300ms;
 }
 
-@keyframes modal {
+@keyframes animate {
+  from {
+    opacity: 1;
+  }
   from {
     opacity: 0;
-    transform: translate3d(0, -30px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
 }
 
-.ativo .modal {
-  animation: modal 3s forwards;
-}
-
-.fechar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid #aaa69d;
-  top: -30px;
-  right: -30px;
+.btn {
   position: absolute;
-  background: #b33939;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  top: 10%;
+  left: 20%;
 }
 
-.img {
-  height: 500px;
-  width: 150px;
-  padding: 10px;
+#bot {
+  position: absolute;
+  top: -3%;
+  left: 100%;
 }

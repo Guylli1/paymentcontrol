@@ -1,8 +1,19 @@
-function carConteudo1() {
-  document.getElementById('but1').innerText = 'Mês de dezembro PAGO!'
+function acao() {
+  const modal = document.querySelector('.modal')
+
+  modal.style.display = 'block'
 }
+
+function fechar() {
+  const modal = document.querySelector('.modal')
+
+  modal.style.display = 'none'
+}
+
+modalof.addEventListener('click', foraModal)
+
 function carConteudo2() {
-  document.getElementById('but2').innerText = 'Mês de Janeiro PAGO!'
+  document.getElementById('but2').innerHTML = 'Mês de Janeiro PAGO!'
 }
 function carConteudo3() {
   document.getElementById('but3').innerText = 'Mês de Fevereiro PAGO!'
@@ -34,3 +45,13 @@ function carConteudo11() {
 function carConteudo12() {
   document.getElementById('but12').innerText = 'Mês de Novembro PAGO!'
 }
+
+//function initModal(modal1) {
+//  const modal = document.getElementById(modal1)
+//  modal.classList.add('mostrar')
+//}
+
+//const botao = document.getElementById('#botao')
+//botao.addEventListener('click', function () {
+//  initModal('comprovante')
+//})
